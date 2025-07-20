@@ -1,0 +1,45 @@
+@import "../styles/variables.css";
+
+.hero-intro {
+  background-color: var(--ladrillo-oscuro);
+  color: var(--blanco-editorial);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  min-height: 80vh;
+  text-align: center;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.firma-img {
+  width: 220px;
+  max-width: 90%;
+  margin-bottom: 1.5rem;
+  opacity: 0.95;
+  transition: transform 0.3s ease;
+}
+
+.firma-img:hover {
+  transform: scale(1.02);
+}
+
+.rol {
+  font-family: var(--fuente-editorial);
+  font-size: 1.6rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+/* Animación suave */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

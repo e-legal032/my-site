@@ -1,0 +1,5 @@
+:root {
+  --ladrillo-oscuro: #3a1f1a;           /* Color editorial profundo */
+  --blanco-editorial: #f4f4f4;          /* Texto principal sobre fondo oscuro */
+  --fuente-editorial: 'IBM Plex Serif', serif;
+}
