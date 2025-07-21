@@ -1,0 +1,81 @@
+.navbar-container {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1000;
+}
+
+/* Ícono hamburguesa */
+.hamburger {
+  background: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: var(--blanco-editorial);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Opcional: animación si querés transformar al X */
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(3px, 3px);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(4px, -4px);
+}
+
+/* Menú desplegado */
+.navbar-menu {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 6px; /* Bordes redondeados suaves */
+  background-color: rgba(10, 10, 10, 0.3); /* Negro semi-transparente */
+  backdrop-filter: blur(8px); /* Difuminado del fondo detrás */
+  -webkit-backdrop-filter: blur(8px); /* Compatibilidad Safari */
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2); /* Sombra leve para profundidad */
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+
+.navbar-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.navbar-menu a {
+  color: var(--blanco-editorial);
+  text-decoration: none;
+  font-size: 0.9rem;
+  opacity: 0.75;
+  transition: opacity 0.2s ease;
+}
+
+.navbar-menu a:hover {
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

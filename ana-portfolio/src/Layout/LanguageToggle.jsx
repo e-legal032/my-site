@@ -5,11 +5,12 @@ function LanguageToggle() {
   const { language, setLanguage } = useContext(LanguageContext);
 
   return (
-    <div>
+    <div className="language-toggle">
       <button onClick={() => setLanguage("es")}>ES</button>
       <button onClick={() => setLanguage("en")}>EN</button>
     </div>
-  );
+   );
 }
+
 
 export default LanguageToggle;

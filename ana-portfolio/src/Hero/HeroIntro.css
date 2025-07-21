@@ -1,22 +1,32 @@
 @import "../styles/variables.css";
 
 .hero-intro {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;         /* firma hacia la izquierda */
+  align-items: center;                /* ✨ esto lo centra verticalmente */
   background-color: var(--ladrillo-oscuro);
   color: var(--blanco-editorial);
+  padding: 4rem 6rem;
+  height: 100vh;                      /* ocupa toda la pantalla */
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.hero-left {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 4rem 2rem;
-  min-height: 80vh;
-  text-align: center;
-  animation: fadeIn 1.2s ease-in-out;
+  
 }
 
+
+/* Firma visual */
 .firma-img {
-  width: 220px;
+  width: 280px;
   max-width: 90%;
-  margin-bottom: 1.5rem;
+  filter: brightness(350%) contrast(30%);
   opacity: 0.95;
   transition: transform 0.3s ease;
 }
@@ -25,11 +35,34 @@
   transform: scale(1.02);
 }
 
+/* Rol profesional */
 .rol {
   font-family: var(--fuente-editorial);
   font-size: 1.6rem;
   font-weight: 300;
   letter-spacing: 0.5px;
+  position: relative;
+  text-align: left;                      /* ← alineación izquierda */
+}
+
+/* Líneas decorativas arriba y abajo */
+.rol::before,
+.rol::after {
+  content: "";
+  display: block;
+  width: 120%;
+  max-width: 280px;
+  height: 1px;
+  background-color: var(--blanco-editorial);
+  margin: 0.8rem 0;                      /* ← margin horizontal ajustado */
+  opacity: 0.5;
+}
+
+/* Bloque derecha: órbita */
+.hero-right {
+  position: relative;
+  width: 500px;
+  height: 600px; /* igual que orbital-menu */
 }
 
 /* Animación suave */
