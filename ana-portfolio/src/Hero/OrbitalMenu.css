@@ -6,8 +6,8 @@
 
 .orbital-icon {
   position: absolute;
-  width: 85px;
-  height: 85px;
+  width: 95px;
+  height: 95px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,9 +18,115 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  filter: brightness(180%) contrast(110%);
+  filter: brightness(280%) contrast(80%);
 }
 
-.orbital-icon:hover {
-  transform: scale(1.08);
+.orbital-icon:hover img {
+  filter: brightness(360%) contrast(120%) drop-shadow(0 0 8px #6cf);
+  transform: scale(1.15);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+ /* Contenedor del ícono + nota editorial */
+.icono-con-nota {
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Imagen del ícono SVG */
+.icono-svg {
+  width: 48px;
+  filter: brightness(520%) contrast(15%);
+  opacity: 1;
+  transition: filter 0.3s ease;
+}
+/* Manifiesto: flotación lenta y editorial */
+.manifiesto-flota {
+  animation: flota-manifiesto 3.4s ease-in-out infinite;
+  animation-delay: 0s;
+}
+@keyframes flota-manifiesto {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-4px); }
+  100% { transform: translateY(0); }
+}
+
+/* Proyectos: flotación marcada y rítmica */
+.proyectos-flota {
+  animation: flota-proyectos 2.8s ease-in-out infinite;
+  animation-delay: 0.3s;
+}
+@keyframes flota-proyectos {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+/* Soluciones: flotación con pulso visual */
+.soluciones-flota {
+  animation: flota-soluciones 3.6s ease-in-out infinite;
+  animation-delay: 0.6s;
+}
+@keyframes flota-soluciones {
+  0%   { transform: translateY(0) scale(1); }
+  50%  { transform: translateY(-6px) scale(1.04); }
+  100% { transform: translateY(0) scale(1); }
+}
+
+/* Stack técnico: flotación nerviosa, técnica */
+.stack-flota {
+  animation: flota-stack 3s ease-in-out infinite;
+  animation-delay: 0.9s;
+}
+@keyframes flota-stack {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+
+/* Sobre mí: flotación suave, introspectiva */
+.sobre-flota {
+  animation: flota-sobre 3.2s ease-in-out infinite;
+  animation-delay: 1.2s;
+}
+@keyframes flota-sobre {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-3px); }
+  100% { transform: translateY(0); }
+}
+
+/* Contacto: flotación activa, cercana */
+.contacto-flota {
+  animation: flota-contacto 2.6s ease-in-out infinite;
+  animation-delay: 1.5s;
+}
+@keyframes flota-contacto {
+  0%   { transform: translateY(0) scale(1); }
+  50%  { transform: translateY(-7px) scale(1.02); }
+  100% { transform: translateY(0) scale(1); }
+}
+
+
+/* Nota editorial que aparece en hover */
+.nota-icono {
+  position: absolute;
+  top: 50%;                  /* top: 50% + transform: translateY(-50%) → centro vertical perfecto */
+  left: calc(100% + 40px);  /* 8px de separación hacia la derecha */
+  transform: translateY(-50%);
+  background-color: rgba(5, 13, 20, 0.85); /* fondo editorial translúcido */
+  color: var(--blanco-editorial, #f2f2f2); /* blanco editorial */
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  font-family: var(--fuente-editorial, sans-serif);
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+/* Hover activa la aparición de la nota */
+.icono-con-nota:hover .nota-icono {
+  opacity: 1;
 }

@@ -1,14 +1,16 @@
 @import "../styles/variables.css";
 
 .hero-intro {
+  max-width: 1200px;
+  margin: 0 auto;
   position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;         /* firma hacia la izquierda */
+  justify-content: center;         
   align-items: center;                /* ✨ esto lo centra verticalmente */
   background-color: var(--ladrillo-oscuro);
   color: var(--blanco-editorial);
-  padding: 4rem 6rem;
+  padding: 4rem 1rem;
   height: 100vh;                      /* ocupa toda la pantalla */
   animation: fadeIn 1.2s ease-in-out;
 }
@@ -16,53 +18,65 @@
 .hero-left {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  
-}
+  align-items: flex-end;
+  justify-content: right;
+  transform: translateY(-28px);        /* ✨ sube el bloque hacia arriba */
+  transition: transform 0.4s ease;     /* suaviza la aparición */
+  }
 
 
 /* Firma visual */
 .firma-img {
-  width: 280px;
+  width: 270px;
   max-width: 90%;
-  filter: brightness(350%) contrast(30%);
-  opacity: 0.95;
+  filter: drop-shadow(0 0 6px #33ccff) brightness(420%) contrast(80%);
+  opacity: 1;
   transition: transform 0.3s ease;
 }
 
 .firma-img:hover {
-  transform: scale(1.02);
+  transform: scale(1.05);
 }
-
-/* Rol profesional */
 .rol {
   font-family: var(--fuente-editorial);
-  font-size: 1.6rem;
-  font-weight: 300;
+  font-size: 1.2rem;
+  font-weight: 250;
   letter-spacing: 0.5px;
   position: relative;
-  text-align: left;                      /* ← alineación izquierda */
+  text-align: left;
+  margin-top: -1.2rem;
+  padding: 0.8rem 0; /* Espacio para las líneas */
 }
 
-/* Líneas decorativas arriba y abajo */
+/* Líneas arriba y abajo */
 .rol::before,
 .rol::after {
   content: "";
-  display: block;
-  width: 120%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
   max-width: 280px;
   height: 1px;
   background-color: var(--blanco-editorial);
-  margin: 0.8rem 0;                      /* ← margin horizontal ajustado */
   opacity: 0.5;
 }
+
+.rol::before {
+  top: 0;
+}
+
+.rol::after {
+  bottom: 0;
+}
+
 
 /* Bloque derecha: órbita */
 .hero-right {
   position: relative;
   width: 500px;
   height: 600px; /* igual que orbital-menu */
+  margin-left: -10rem;
 }
 
 /* Animación suave */
@@ -76,3 +90,5 @@
     transform: translateY(0);
   }
 }
+
+

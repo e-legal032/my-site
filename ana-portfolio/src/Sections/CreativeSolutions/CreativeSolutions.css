@@ -1,0 +1,117 @@
+.creative-solutions {
+  padding: 3rem 2rem;
+  background: #050d14;
+  color: #fff;
+  font-family: "YourEditorialFont", sans-serif;
+}
+
+.cs-header {
+  display: flex;
+  flex-direction: column; /* apila ícono arriba, título debajo */
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.cs-section-icon {
+  width: 95px;
+  height: 95px;
+  margin-bottom: 20px;
+  filter: brightness(260%) contrast(120%) drop-shadow(0 0 6px #33ccff);
+}
+.cs-header h2 {
+font-family: var(--fuente-editorial, sans-serif);
+font-size: 2rem;
+letter-spacing: 0.8px;
+text-transform: uppercase;
+}
+.case-card h3 {
+  text-align: center;
+  font-size: 1.2rem;        /* Podés ajustar según escala editorial */
+  margin-bottom: 0.5rem;    /* Espacio antes del contenido */
+  font-weight: 600;         /* Opcional, para darle presencia */
+  color: #e0e0e0;           /* O el tono que mejor respire sobre fondo vidrio */
+}
+
+.cs-cards-row {
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.case-card {
+  width: 300px;
+  padding: 1rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+  transition: 0.8s;
+  cursor: pointer;
+}
+.case-card:hover {
+  transform: translateY(-9px);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+}
+
+.case-card-img {
+  width: 100%;
+  border-radius: 4px;
+}
+.case-dilemma {
+  font-size: 0.85rem;              /* Letra más pequeña, pero legible */
+  line-height: 1.4;                /* Respiración adecuada */
+  color: #b0b0b0;                  /* Gris editorial que contraste suave sobre fondo vidrio */
+  text-align: center;             /* Coherente con el h3 centrado */
+  margin-bottom: 0.5rem;           /* Espacio antes de pasar al contenido principal */
+ }
+ .case-card blockquote {
+  font-style: italic;
+  color: #e0e0e0;          /* mismo color que el título (h3) */
+  text-align: center;
+  margin: 0.5rem 0 1rem;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.story-panel {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 12px;
+  background: #050d14;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.08);
+}
+
+
+.story-result-img {
+  width: 150px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.story-text {
+  flex: 1;
+}
+
+.story-text h4 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.75rem;
+  color: #e0e0e0; /* mismo tono editorial si aplica */
+}
+
+.story-text p {
+  font-size: 0.85rem;              /* Letra más pequeña, pero legible */
+  line-height: 1.4;                /* Respiración adecuada */
+  color: #b0b0b0;                  /* Gris editorial que contraste suave sobre fondo vidrio */
+  text-align: center;             /* Coherente con el h3 centrado */
+  margin-bottom: 0.5rem; 
+}
+

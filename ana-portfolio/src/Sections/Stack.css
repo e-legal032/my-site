@@ -1,0 +1,81 @@
+/* src/components/Stack.css */
+
+.stack-section {
+  padding: 4rem 2rem;
+  background-color: #050d14;
+  color: #fff;
+}
+
+.stack-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.stack-header-icon {
+  width: 95px;
+  margin-bottom: 1.5rem;
+  filter: brightness(260%) contrast(120%) drop-shadow(0 0 6px #33ccff);
+}
+
+.stack-title {
+  font-family: var(--fuente-editorial, sans-serif);
+  font-size: 2rem;
+  letter-spacing: 0.8px;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.stack-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(64px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.stack-icon {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: drop-shadow(0 0 0.3rem rgba(255, 255, 255, 0.15));
+}
+
+.stack-icon:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 0.6rem rgba(255, 255, 255, 0.3));
+}
+.stack-carousel {
+  overflow: hidden;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.stack-track {
+  display: flex;
+  gap: 3rem;
+  white-space: nowrap;
+  animation: scrollStack 30s linear infinite;
+}
+
+@keyframes scrollStack {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.stack-icon {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+.stack-icon:hover {
+  transform: scale(1.1);
+}

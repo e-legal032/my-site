@@ -1,0 +1,35 @@
+.recent-wrapper {
+  padding: 60px 20px;
+  
+  text-align: center;
+}
+
+.recent-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.recent-icon {
+  width: 95px;
+  height: 95px;
+  margin-bottom: 20px;
+  filter: brightness(260%) contrast(120%) drop-shadow(0 0 6px #33ccff);
+}
+
+.recent-title {
+  font-family: var(--fuente-editorial, sans-serif);
+  font-size: 2rem;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  }
+
+.recent-gallery {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 2rem;
+}
