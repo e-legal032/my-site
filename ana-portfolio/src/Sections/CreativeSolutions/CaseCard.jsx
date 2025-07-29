@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import StoryPanel from "./StoryPanel";
+import { LanguageContext } from "../../Shared/LanguageContext";
+import { texts } from "../../Shared/texts";
 
 function CaseCard({ data }) {
   const [expanded, setExpanded] = useState(false);
+  const { language } = useContext(LanguageContext);
 
   const togglePanel = () => setExpanded(!expanded);
 
@@ -17,12 +20,12 @@ function CaseCard({ data }) {
     >
       <img
         src={data.iconImg}
-        alt={`Caso ${data.title}`}
+        alt={`Caso ${texts[language][data.titleKey]}`}
         className="case-card-img"
       />
-      <h3>{data.title}</h3>
-      <p className="case-dilemma">{data.dilema}</p>
-      <blockquote>“{data.quote}”</blockquote>
+      <h3>{texts[language][data.titleKey]}</h3>
+      <p className="case-dilemma">{texts[language][data.dilemaKey]}</p>
+      <blockquote>“{texts[language][data.quoteKey]}”</blockquote>
 
       <AnimatePresence>
         {expanded && (

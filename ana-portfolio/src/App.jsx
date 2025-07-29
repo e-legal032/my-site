@@ -7,7 +7,9 @@ import Manifesto from "./Sections/Manifesto";
 import RecentProjects from "./Sections/RecentProjects";
 import CreativeSolutions from "./Sections/CreativeSolutions/CreativeSolutions";
 import Stack from "./Sections/Stack";
-
+import AboutMe from "./Sections/AboutMe";
+import Contacto from "./Sections/Contacto";
+import Footer from "./Layout/Footer";
 // ...otras secciones
 
 function App() {
@@ -21,6 +23,10 @@ function App() {
         <RecentProjects />
         <CreativeSolutions />
         <Stack />
+        <AboutMe />
+        <Contacto />
+        <Footer />
+
         {/* ...más secciones */}
       </div>
     </LanguageProvider>

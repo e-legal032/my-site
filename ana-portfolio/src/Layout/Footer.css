@@ -1,0 +1,10 @@
+/* src/Layout/Footer.css */
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem;
+  color: #888; /* Ajustable según tu contraste */
+  background-color: transparent; /* O un tono editorial sutil */
+}

@@ -1,11 +1,16 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useContext } from "react";
 import "./Manifesto.css";
 import startBitRain from "../effects/bitRain";
+import { LanguageContext } from "../Shared/LanguageContext";
+import { texts } from "../Shared/texts";
 
 function Manifesto() {
+  const { language } = useContext(LanguageContext);
+
   useEffect(() => {
     startBitRain("bitRainCanvas");
   }, []);
+
   return (
     <section id="manifiesto" className="manifesto-section">
       <canvas id="bitRainCanvas" className="bit-rain-canvas"></canvas>
@@ -19,27 +24,12 @@ function Manifesto() {
       </div>
 
       <div className="manifesto-texto">
-        <h2 className="manifesto-titulo">Manifiesto</h2>
-        <h3 className="manifesto-frase">
-          No diseño interfaces. Escribo atmósferas editoriales navegables.
-        </h3>
-        <p>
-          Cada proyecto es una obra narrativa: estructura, ritmo, identidad.  
-          Cada decisión visual y técnica responde a una intención.  
-          No hay parches. No hay adornos. Hay síntesis.
-        </p>
-        <p>
-          Trabajo con precisión modular, control total y respeto por el tiempo.  
-          Valido cada ícono, cada línea, cada transición.  
-          Lo que no aporta atmósfera, sobra.
-        </p>
-        <p>
-          Mi portfolio no muestra lo que sé hacer.  
-          Muestra cómo pienso, cómo decido, cómo construyo.
-        </p>
-        <p className="manifesto-cierre">
-          Este manifiesto no se lee. Se respira.
-        </p>
+        <h2 className="manifesto-titulo">{texts[language].manifiestoTitulo}</h2>
+        <h3 className="manifesto-frase">{texts[language].manifiestoFrase}</h3>
+        <p>{texts[language].manifiestoParrafo1}</p>
+        <p>{texts[language].manifiestoParrafo2}</p>
+        <p>{texts[language].manifiestoParrafo3}</p>
+        <p className="manifesto-cierre">{texts[language].manifiestoCierre}</p>
       </div>
     </section>
   );

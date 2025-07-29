@@ -8,31 +8,31 @@ import case03Result from "../../assets/images/creative-solutions/case03-result.p
 const cases = [
   {
     id: "case01",
-    title: "Publicidad",
-    dilema: "Mi cliente tenía productos publicados en marketplaces pero no eran visitados y no podía costear publicidad.",
-    quote: "¡No ven mis artículos y la publicidad es muy cara!",
+    titleKey: "case01Title",
+    dilemaKey: "case01Dilema",
+    quoteKey: "case01Quote",
+    solucionKey: "case01Solucion",
     resultImg: case01Result,
-    iconImg: case01Icon,
-    solucion: "Diseñé una interfaz web que reuniera los artículos, linkeando cada uno. Alojamiento gratuito, funcionalidad multiplataforma y estética cuidada.",
+    iconImg: case01Icon
   },
   {
     id: "case02",
-    title: "Copywriting",
-    dilema: "Mi cliente tenía ideas narrativas profundas, pero no sabía cómo articularlas.",
-    quote: "¡Quiero contar muchas cosas, pero no sé cómo escribirlas!",
+    titleKey: "case02Title",
+    dilemaKey: "case02Dilema",
+    quoteKey: "case02Quote",
+    solucionKey: "case02Solucion",
     resultImg: case02Result,
-    iconImg: case02Icon,
-    solucion: "Organizamos sus ideas, trabajamos juntas los textos, y construimos un blog, edición ebook y prefigurado de edición impresa.",
+    iconImg: case02Icon
   },
   {
     id: "case03",
-    title: "Diseño Web",
-    dilema: "Mi cliente tenía un sitio creado por interfaz visual pero no reflejaba su identidad ni era funcional.",
-    quote: "¡Esta página no habla de mí y ya perdí mucho tiempo!",
+    titleKey: "case03Title",
+    dilemaKey: "case03Dilema",
+    quoteKey: "case03Quote",
+    solucionKey: "case03Solucion",
     resultImg: case03Result,
-    iconImg: case03Icon,
-    solucion: "Rediseñamos identidad, hicimos ajustes estéticos y agregamos login tunizado para crear base de datos profesional.",
-  },
+    iconImg: case03Icon
+  }
 ];
 
 export default cases;

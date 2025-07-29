@@ -1,3 +1,4 @@
+import React, { useContext } from "react";
 import stackImg01 from "../assets/images/stack/stack-img01.png";
 import stackImg02 from "../assets/images/stack/stack-img02.png";
 import stackImg03 from "../assets/images/stack/stack-img03.png";
@@ -12,6 +13,8 @@ import stackImg11 from "../assets/images/stack/stack-img11.png";
 import stackImg12 from "../assets/images/stack/stack-img12.png";
 import stackIcon from "../assets/icons/stack.svg";
 import "./Stack.css";
+import { LanguageContext } from "../Shared/LanguageContext";
+import { texts } from "../Shared/texts";
 
 const stackItems = [
   { id: "s01", img: stackImg01, alt: "stack-img01" },
@@ -29,11 +32,13 @@ const stackItems = [
 ];
 
 export default function Stack() {
+  const { language } = useContext(LanguageContext);
+
   return (
     <section id="stack" className="stack-section">
       <div className="stack-header">
         <img src={stackIcon} alt="Stack icon" className="stack-header-icon" />
-        <h2 className="stack-title">Stack Técnico</h2>
+        <h2 className="stack-title">{texts[language].stackTitle}</h2>
       </div>
 
       <div className="stack-carousel">
@@ -49,3 +54,4 @@ export default function Stack() {
     </section>
   );
 }
+// Note: The stackItems array is duplicated to create a continuous scrolling effect in the carousel.
