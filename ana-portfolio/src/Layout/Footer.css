@@ -8,3 +8,9 @@
   color: #888; /* Ajustable según tu contraste */
   background-color: transparent; /* O un tono editorial sutil */
 }
+@media (max-width: 768px) {
+  .footer {
+    font-size: clamp(0.75rem, 4vw, 0.875rem);
+    padding: 1.5rem 1rem;
+  }
+}

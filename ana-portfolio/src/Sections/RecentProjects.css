@@ -33,3 +33,24 @@
   overflow: hidden;
   margin-top: 2rem;
 }
+@media (max-width: 768px) {
+  .recent-wrapper {
+    padding: 40px 1.5rem;
+  }
+
+  .recent-icon {
+    width: clamp(64px, 18vw, 95px);
+    height: clamp(64px, 18vw, 95px);
+    margin-bottom: 1rem;
+  }
+
+  .recent-title {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+    letter-spacing: 0.5px;
+  }
+
+  .recent-gallery {
+    margin-top: 1.5rem;
+    transform: scale(0.95); /* ✨ achique sutil que preserva claridad visual */
+  }
+}

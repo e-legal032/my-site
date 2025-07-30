@@ -1,5 +1,13 @@
 export const texts = {
   es: {
+    navbar: {
+      ariaLabel: "Menú",
+      manifiesto: "Manifiesto",
+      proyectos: "Proyectos",
+      soluciones: "Soluciones",
+      sobreMi: "Sobre mí",
+      contacto: "Contacto"
+    },
     manifesto: "Creando experiencias web",
     contact: "Contacto",
     notaManifiesto: "Manifiesto",
@@ -58,6 +66,14 @@ export const texts = {
     // ...
   },
   en: {
+    navbar: {
+      ariaLabel: "Menu",
+      manifiesto: "Manifesto",
+      proyectos: "Projects",
+      soluciones: "Solutions",
+      sobreMi: "About Me",
+      contacto: "Contact"
+    },
     manifesto: "Creating web experiences",
     contact: "Contact",
     notaManifiesto: "Manifesto",

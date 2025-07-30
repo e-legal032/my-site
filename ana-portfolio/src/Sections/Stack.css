@@ -79,3 +79,36 @@
 .stack-icon:hover {
   transform: scale(1.1);
 }
+@media (max-width: 768px) {
+  .stack-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .stack-header-icon {
+    width: clamp(64px, 18vw, 95px);
+    margin-bottom: 1rem;
+  }
+
+  .stack-title {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+    margin-bottom: 1.5rem;
+  }
+
+  .stack-grid {
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(48px, 1fr)); /* 👈 Íconos más contenidos */
+  }
+
+  .stack-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .stack-carousel {
+    padding: 1.5rem 0;
+  }
+
+  .stack-track {
+    gap: 2rem;
+  }
+}

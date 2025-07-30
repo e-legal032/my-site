@@ -8,9 +8,10 @@ function OrbitalMenu() {
 
   useEffect(() => {
     const icons = document.querySelectorAll(".icono-con-nota");
-    const radius = 180;
-    const centerX = 250;
-    const centerY = 230;
+    const isMobile = window.innerWidth < 768;
+    const radius = isMobile ? 90 : 180;
+    const centerX = isMobile ? window.innerWidth / 2 : 250;
+    const centerY = isMobile ? 120 : 230;
     const total = icons.length;
 
     icons.forEach((icon, i) => {

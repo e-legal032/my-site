@@ -104,3 +104,54 @@ font-family: var(--fuente-editorial, sans-serif);
   border: 1px solid rgba(180, 70, 70, 0.4);
   color: #b44646;
 }
+
+@media (max-width: 768px) {
+  .contacto-section {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .contacto-header h2 {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .contacto-icon {
+    width: clamp(64px, 18vw, 95px);
+    margin-bottom: 1rem;
+  }
+
+  .contacto-form {
+    padding-inline: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .contacto-form input,
+  .contacto-form textarea {
+    font-size: 1rem;
+  }
+
+  .contacto-form button {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+
+  .contacto-redes {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding-bottom: 1rem;
+  }
+
+  .contacto-redes img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .mensaje-confirmacion,
+  .mensaje-error {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+    margin-inline: auto;
+  }
+}

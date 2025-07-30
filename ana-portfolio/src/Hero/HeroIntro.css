@@ -1,6 +1,14 @@
 @import "../styles/variables.css";
 
+/* Wrapper orbital con escala editorial */
+.orbital-wrapper {
+  transform-origin: top center;
+  transition: transform 0.3s ease;
+}
+
+
 .hero-intro {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
@@ -10,7 +18,7 @@
   align-items: center;                /* ✨ esto lo centra verticalmente */
   background-color: var(--ladrillo-oscuro);
   color: var(--blanco-editorial);
-  padding: 4rem 1rem;
+  padding: 4rem 1rem 1.5rem 1rem;
   height: 100vh;                      /* ocupa toda la pantalla */
   animation: fadeIn 1.2s ease-in-out;
 }
@@ -27,6 +35,7 @@
 
 /* Firma visual */
 .firma-img {
+  position: relative;
   width: 270px;
   max-width: 90%;
   filter: drop-shadow(0 0 6px #33ccff) brightness(420%) contrast(80%);
@@ -92,3 +101,64 @@
 }
 
 
+@media (max-width: 768px) {
+  .orbital-wrapper {
+    transform: scale(0.7);
+    transform-origin: top center;
+    margin-top: 2.5rem;
+    margin-left: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .hero-intro {
+    margin: auto 0;
+    flex-direction: row;
+    height: auto;
+    padding: 1rem 0.5rem;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .hero-left {
+    width: 100%;
+    max-width: 250px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 10rem;
+    margin-left: -5rem;
+    margin-bottom: 1rem;
+    transform: none;
+  }
+
+  .hero-right {
+    width:300px;
+    max-width: 100vh;
+    height: 320px; /* ajusta según el radio del orbital */
+    margin-left: -25rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .firma-img {
+    margin: 0;
+    align-items: flex-start;
+    width: clamp(160px, 45vw, 240px);
+  }
+
+  .rol {
+    left: 0%;
+    font-size: clamp(1rem, 5vw, 1.6rem);
+    margin-top: 0rem;
+    padding-bottom: 1rem;
+    text-align:left;
+  }
+
+  .rol::before,
+  .rol::after {
+    margin-top: -1rem;
+    max-width: 180px;
+    justify-content: left;
+  }
+}

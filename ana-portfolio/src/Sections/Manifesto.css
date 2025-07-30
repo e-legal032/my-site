@@ -76,3 +76,40 @@
     transform: translateY(0);
   }
 }
+@media (max-width: 768px) {
+  .manifesto-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .manifesto-icono img {
+    width: clamp(64px, 18vw, 95px);
+    margin-bottom: 1rem;
+  }
+
+  .manifesto-titulo {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+    margin-bottom: 1.5rem;
+  }
+
+  .manifesto-frase {
+    font-size: clamp(1rem, 4.5vw, 1.2rem);
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    padding-inline: 0.5rem;
+    text-align: center;
+  }
+
+  .manifesto-texto p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    text-align: left; /* ✨ en mobile, justificado puede volverse ilegible */
+    margin-bottom: 1rem;
+    padding-inline: 0.5rem;
+  }
+
+  .manifesto-cierre {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+}

@@ -46,7 +46,7 @@ const Contacto = () => {
   };
 
   return (
-    <section className="contacto-section">
+    <section id="contacto" className="contacto-section">
       <div className="contacto-header">
         <img src={contactoIcon} alt={t.contactoTitulo} className="contacto-icon" />
         <h2>{t.contactoTitulo}</h2>

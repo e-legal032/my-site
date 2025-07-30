@@ -18,6 +18,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   position: relative;
+  padding-inline: clamp(1rem, 5vw, 3rem);
 }
 
 /* Posiciona el toggle arriba a la izquierda */
