@@ -2,6 +2,7 @@ import React, { useEffect, useContext } from "react";
 import "./Manifesto.css";
 import startBitRain from "../effects/bitRain";
 import { LanguageContext } from "../Shared/LanguageContext";
+import manifiestoIcon from "../assets/icons/manifiesto.svg";
 import { texts } from "../Shared/texts";
 
 function Manifesto() {
@@ -17,7 +18,7 @@ function Manifesto() {
 
       <div className="manifesto-icono">
         <img
-          src="/src/assets/icons/manifiesto.svg"
+          src={manifiestoIcon}
           alt="Icono Manifiesto"
           className="icono-svg"
         />
