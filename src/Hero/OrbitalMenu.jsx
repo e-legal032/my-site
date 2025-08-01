@@ -15,7 +15,7 @@ function OrbitalMenu() {
   useEffect(() => {
     const icons = document.querySelectorAll(".icono-con-nota");
     const isMobile = window.innerWidth < 768;
-    const radius = isMobile ? 90 : 180;
+    const radius = isMobile ? 140 : 180;
     const centerX = isMobile ? window.innerWidth / 2 : 250;
     const centerY = isMobile ? 120 : 230;
     const total = icons.length;
@@ -76,4 +76,4 @@ function OrbitalMenu() {
   );
 }
 
-export default OrbitalMenu;
+export default OrbitalMenu
