@@ -134,8 +134,8 @@
   .hero-right {
     width:300px;
     max-width: 100vh;
-    height: 400px; /* ajusta según el radio del orbital */
-    margin-top: -3rem;
+    height: 450px; /* ajusta según el radio del orbital */
+    margin-top: 10rem;
     margin-left: -14rem;
     display: flex;
     justify-content: center;
