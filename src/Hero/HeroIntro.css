@@ -15,7 +15,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;         
-  align-items: center;                /* ✨ esto lo centra verticalmente */
+  align-items: center;                /* centra verticalmente */
   background-color: var(--ladrillo-oscuro);
   color: var(--blanco-editorial);
   padding: 4rem 1rem 1.5rem 1rem;
@@ -134,8 +134,8 @@
   .hero-right {
     width:300px;
     max-width: 100vh;
-    height: 320px; /* ajusta según el radio del orbital */
-    margin-left: -25rem;
+    height: 350px; /* ajusta según el radio del orbital */
+    margin-left: -15rem;
     display: flex;
     justify-content: center;
     align-items: flex-start;
