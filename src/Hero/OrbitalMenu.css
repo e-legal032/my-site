@@ -134,7 +134,7 @@
 @media (max-width: 768px) {
   .orbital-menu {
     width: 100vw;
-    height: 550px; /* ajusta según el radio */
+    height: 600px; /* ajusta según el radio */
     min-width: 0;
     min-height: 0;
   }
