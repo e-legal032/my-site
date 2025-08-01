@@ -1,12 +1,40 @@
-# React + Vite
+![Portada del sitio](https://ana-site.netlify.app/preview.jpg)
+# Este site...
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este sitio es una obra editorial navegable. No sólo muestra lo que sé hacer: muestra cómo pienso, cómo decido, cómo construyo.
 
-Currently, two official plugins are available:
+Cada sección articula identidad visual, estructura técnica y atmósfera única. No hay adornos. Hay síntesis.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Here we're...
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+👉 [https://ana-site.netlify.app](https://ana-site.netlify.app)
+
+## 🛠️ Tecnologías
+
+- React + Vite
+- Deploy en Netlify
+- Formulario integrado con Netlify Forms
+- Metadatos SEO y Open Graph
+- Control modular y curatorial de assets
+
+## 📖 Manifiesto
+
+> “No diseño interfaces. Escribo atmósferas editoriales navegables.”
+
+Este manifiesto no se lee. Se respira.
+
+## 🧭 Navegación
+
+El sitio incluye enlaces a proyectos complementarios:
+
+- [Chequeá Info](https://checkit-anna.netlify.app)
+- [Cotizá Monedas](https://cotizador-ana.netlify.app)
+- [Armá tu Sitio Web](https://codigo-ba.github.io/site/)
+- [Publicitá tus Productos](https://codigo-ba.github.io/Outfits_public)
+
+---
+> Agradecimiento a Copilot por asistencia continua en migraciones, validaciones Netlify, metadatos y documentación estructural
+
+
+
