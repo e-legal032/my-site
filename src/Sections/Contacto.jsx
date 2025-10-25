@@ -3,6 +3,8 @@ import './Contacto.css';
 import contactoIcon from '../assets/icons/contacto.svg';
 import instagramIcon from '../assets/icons/redes-ico-ig.svg';
 import githubIcon from '../assets/icons/redes-ico-gitHub.svg';
+import linkedinIcon from '../assets/icons/redes-ico-linkedin.svg';
+import notionIcon from '../assets/icons/redes-ico-notion.svg';
 import mailIcon from '../assets/icons/redes-ico-mail.svg';
 import { LanguageContext } from '../Shared/LanguageContext';
 import { texts } from '../Shared/texts';
@@ -94,11 +96,25 @@ const Contacto = () => {
       </form>
 
       <div className="contacto-redes">
+        <a
+          href="https://neat-dandelion-15a.notion.site/portFolio-290c83048cda80eb83eec4fed9fa6a9d"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={notionIcon} alt="Notion" />
+        </a>
         <a href="https://www.instagram.com/ana_0key" target="_blank" rel="noopener noreferrer">
           <img src={instagramIcon} alt="Instagram" />
         </a>
         <a href="https://github.com/e-legal032" target="_blank" rel="noopener noreferrer">
           <img src={githubIcon} alt="GitHub" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/anal%C3%ADa-esp%C3%B3sito-6176a1235?trk=contact-info"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={linkedinIcon} alt="LinkedIn" />
         </a>
         <a href="mailto:e.legal032@gmail.com">
           <img src={mailIcon} alt="Email" />
