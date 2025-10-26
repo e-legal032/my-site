@@ -19,7 +19,7 @@ const RotatingGallery = () => {
     { title: texts[language].galeriaBitcoin, image: image2, link: "https://cotizador-crypto5.netlify.app" },
     { title: texts[language].galeriaOutfits, image: image3, link: "https://codigo-ba.github.io/Outfits_public" },
     { title: texts[language].galeriaCheckit, image: image4, link: "https://checkit-anna.netlify.app" },
-    { title: texts[language].galeriaCheckit, image: image5, link: "https://checkit-anna.netlify.app" },
+    { title: texts[language].galeriaPetPlanner, image: image5, link: "https://petcare-planner.netlify.app" },
     { title: texts[language].galeriaDolar, image: image6, link: "https://cotizador-ana.netlify.app" },
     { title: texts[language].galeriaMonedas, image: image7, link: "https://cotizador-ana.netlify.app" },
     { title: texts[language].galeriaSite, image: image8, link: "https://codigo-ba.github.io/site/" }
